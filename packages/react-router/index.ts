@@ -16,6 +16,7 @@ import type {
   PathMatch,
   PathPattern,
   RedirectFunction,
+  RelativeRoutingType,
   Router as RemixRouter,
   ShouldRevalidateFunction,
   To,
@@ -75,7 +76,6 @@ import type {
   NonIndexRouteObject,
   RouteMatch,
   RouteObject,
-  RelativeRoutingType,
 } from "./lib/context";
 import {
   DataRouterContext,
@@ -107,6 +107,7 @@ import {
   useRevalidator,
   useRouteError,
   useRouteLoaderData,
+  useRouterNavigate,
 } from "./lib/hooks";
 
 // Exported for backwards compatibility, but not being used internally anymore
@@ -204,6 +205,7 @@ export {
   useRevalidator,
   useRouteError,
   useRouteLoaderData,
+  useRouterNavigate,
   useRoutes,
 };
 
